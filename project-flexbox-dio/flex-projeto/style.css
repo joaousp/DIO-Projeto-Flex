@@ -65,13 +65,13 @@ header .menu{
     color: #122A57;
     font-size: 48px;
     margin-bottom: 10px;
-
 }
 
 .texto-apresentacao p{
     margin-bottom: 15px;
 }
-.texto-apresentacao a{
+
+.btn{
     background-color: #122A57;
     color: #fff;
     text-align: center;
@@ -135,7 +135,7 @@ header .menu{
 }
 .list-servicos{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .list-servicos .item-servico{
@@ -168,4 +168,60 @@ header .menu{
     margin: auto;
 }
 
+#planos{
+    flex-direction: column;
+    min-height: 100vh;
+}
 
+.list-planos{
+    display: flex;
+    align-items: flex-end ;
+}
+
+.item-plano{
+    flex: 1;
+    border: 5px solid #122A57;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.item-plano .btn{
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.item-plano h3{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.item-plano h3::after{
+    content: "";
+    height: 3px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #122A57;
+    margin-bottom: 10px;
+}
+
+.item-plano ul{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.item-plano ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.item-plano ul li::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #122A57;
+    margin-right: 5px;
+}
